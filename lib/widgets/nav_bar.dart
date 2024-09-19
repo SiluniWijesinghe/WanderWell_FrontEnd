@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 
 class NavBar extends StatelessWidget implements PreferredSizeWidget {
-  const NavBar({Key? key}) : super(key: key);
+  const NavBar({super.key});
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
       title: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly, // Centers the icons and adds space between them
+        mainAxisAlignment: MainAxisAlignment
+            .spaceEvenly, // Centers the icons and adds space between them
         children: <Widget>[
           IconButton(
             icon: Image.asset('assets/images/person.png',
